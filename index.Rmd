@@ -1,5 +1,5 @@
 ---
-title: "My Website"
+title: "Estimación de la curva y pronóstico del número de infectados por COVID-19 mediante modelos estadísticos en Colombia durante el año 2020"
 ---
 
-Hello, Website!
+Autora: **Natalia Vanegas Torres**
