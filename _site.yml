@@ -9,6 +9,8 @@ navbar:
       href: about.html
     - text: "Modelos"
       href: modelos.html
+    - text: "Dashboard"
+      href: dashboard.html
 output:
   html_document:
     theme: united

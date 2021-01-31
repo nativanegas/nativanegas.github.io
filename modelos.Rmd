@@ -1,5 +1,5 @@
 ---
-title: "Objetivos del proyecto"
+title: "Pronósticos"
 ---
 ```{r setup, include=FALSE,echo=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
