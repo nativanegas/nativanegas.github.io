@@ -1,11 +1,11 @@
-name: "my-website"
+name: "Proyecto de grado"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Coronavirus en Colombia 2020"
   left:
-    - text: "Home"
+    - text: "Presentación"
       href: index.html
-    - text: "About"
+    - text: "Objetivos"
       href: about.html
 output:
   html_document:
