@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "Objetivos"
       href: about.html
+    - text: "Modelos"
+      href: modelos.html
 output:
   html_document:
     theme: united
