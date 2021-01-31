@@ -16,4 +16,13 @@ include_graphics("HW.png")
 include_graphics("holt.png")
 ```
 </div>
+<div style="padding: 10px; float: left; width: 45%; text-align: justify;">
+```{r arima_grafica, fig.align="center",out.width="600px"}
+include_graphics("arima.png")
+```
+</div><div style="padding: 10px; float: left; width: 45%; text-align: justify;">
+```{r mm_grafica, fig.align="center",out.width="600px"}
+include_graphics("mm.png")
+```
+</div>
 </center>
