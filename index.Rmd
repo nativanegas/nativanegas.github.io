@@ -35,17 +35,10 @@ library(mapview)
 
 
 <center>
-<h2>Curva de contagios diarios en Colombia</h2>
+<h2>Curva de contagios diarios en Colombia desde el 6 de marzo hasta el 31 de diciembre de 2020</h2>
 ```{r descarga_datos, echo=FALSE, message=FALSE}
 token <- "HufIk4NUOvHkCccqlJjKcJVqm" #Es una herramienta para poder descargar los datos desde el INS.
-df.ins=read.csv("/Users/Natalia/Desktop/TESIS/2020-2/DOCUMENTOS FINAL TESIS/21dic.csv")
-df.ins$fecha_inicio_sintomas <- as.Date(df.ins$fecha_inicio_sintomas,tryFormats = c("%d-%m-%Y", "%d/%m/%Y"))
-df.ins$fecha_de_notificaci_n <- as.Date(df.ins$fecha_de_notificaci_n, tryFormats = c("%d-%m-%Y", "%d/%m/%Y"))
-df.ins$fecha_muerte <- as.Date(df.ins$fecha_muerte, tryFormats = c("%d-%m-%Y", "%d/%m/%Y"))
-df.ins$fecha_recuperado <- as.Date(df.ins$fecha_recuperado, tryFormats = c("%d-%m-%Y", "%d/%m/%Y"))
-df.ins$fecha_reporte_web <- as.Date(df.ins$fecha_reporte_web, tryFormats = c("%d-%m-%Y", "%d/%m/%Y"))
-df.ins$fecha_diagnostico  <- as.Date(df.ins$fecha_diagnostico, tryFormats = c("%d-%m-%Y", "%d/%m/%Y"))
-#De la 11 a la 16 convierte en formato fecha corta.
+df.ins=read.csv("/Users/Natalia/Desktop/TESIS/2020-2/DOCUMENTOS FINAL TESIS/31dic.csv")
 
 df.ins$confirmados <- "Confirmados" #Crea una columna para tener un conteo de los confirmados diarios.
 
