@@ -22,6 +22,9 @@ navbar:
           href: "mm.html"
         - text: "Modelo ARIMA"
           href: arima.html
+        - text: "Comparación"
+        - text: "Pronóstico vs Datos Reales"
+          href: comparacion.html
     - text: "Dashboard"
       icon: fa-globe
       href: dashboard.html
