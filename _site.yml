@@ -5,10 +5,13 @@ navbar:
   type: inverse
   left:
     - text: "Presentación"
+      icon: fa-home
       href: index.html
     - text: "Objetivos"
+      icon: fa-file
       href: about.html
     - text: "Modelos"
+      icon: fa-server
       menu:
         - text: "Modelos de pronóstico"
         - text: "Modelo Holt-Winter"
@@ -20,6 +23,7 @@ navbar:
         - text: "Modelo ARIMA"
           href: arima.html
     - text: "Dashboard"
+      icon: fa-globe
       href: dashboard.html
 output:
   html_document:
