@@ -18,7 +18,7 @@ navbar:
         - text: "Modelo de Medias Móviles"
           href: "mm.html"
         - text: "Modelo ARIMA"
-          hred: arima.html
+          href: arima.html
     - text: "Dashboard"
       href: dashboard.html
 output:

@@ -4,6 +4,7 @@ title: "Modelo de Medias Móviles"
 ```{r setup, include=FALSE,echo=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(knitr)
+library(graphics)
 ```
 
 <div style="padding: 10px; float: left; width: 45%; text-align: justify;">
@@ -15,3 +16,4 @@ include_graphics("mm.png")
 ```{r mm_pronostico, fig.align="center",out.width="300px"}
 include_graphics("pronmm.PNG")
 ```
+</div>
