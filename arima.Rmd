@@ -1,0 +1,18 @@
+---
+title: "Pronósticos"
+---
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+<div style="padding: 10px; float: left; width: 45%; text-align: justify;">
+```{r arima_graf, fig.align="center",out.width="600px"}
+include_graphics("arima.png")
+```
+</div>
+<div style="padding: 10px; float: right; width: 45%; text-align: justify;">
+```{r arima_pronostico, fig.align="center",out.width="300px"}
+include_graphics("pronarima.PNG")
+```
+</div>

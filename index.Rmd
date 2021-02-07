@@ -1,8 +1,8 @@
 ---
 title: "Estimación de la curva y pronóstico del número de infectados por COVID-19 mediante modelos estadísticos en Colombia durante el año 2020"
 ---
-
 Autora: **Natalia Vanegas Torres**
+
 
 ```{r setup, include=FALSE,echo=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

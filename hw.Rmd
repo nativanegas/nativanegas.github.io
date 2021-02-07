@@ -1,0 +1,18 @@
+---
+title: "Modelo Holt-Winters"
+---
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+<center>
+<div style="padding: 10px; float: left; width: 45%; text-align: justify;">
+```{r hw_grafica, fig.align="center",out.width="600px",echo=FALSE,message=FALSE}
+include_graphics("HW.png")
+```
+</div>
+<div style="padding: 10px; float: right; width: 45%; text-align: justify;">
+```{r hw_pronostico, fig.align="center",out.width="300px"}
+include_graphics("pronHW.PNG")
+
+```

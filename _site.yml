@@ -2,13 +2,23 @@ name: "Proyecto de grado"
 output_dir: "."
 navbar:
   title: "Coronavirus en Colombia 2020"
+  type: inverse
   left:
     - text: "Presentación"
       href: index.html
     - text: "Objetivos"
       href: about.html
     - text: "Modelos"
-      href: modelos.html
+      menu:
+        - text: "Modelos de pronóstico"
+        - text: "Modelo Holt-Winter"
+          href: hw.html
+        - text: "Modelo Holt"
+          href: holt.html
+        - text: "Modelo de Medias Móviles"
+          href: "mm.html"
+        - text: "Modelo ARIMA"
+          hred: arima.html
     - text: "Dashboard"
       href: dashboard.html
 output:
