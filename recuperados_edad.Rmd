@@ -1,0 +1,12 @@
+---
+title: "Recuperados por edad"
+---
+
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+```{r recuperados_edad, fig.align="center",out.width="700px"}
+include_graphics("recupedad.png")
+```

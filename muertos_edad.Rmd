@@ -1,0 +1,12 @@
+---
+title: "Muertos por edad"
+---
+
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+```{r muertos_edad, fig.align="center",out.width="700px"}
+include_graphics("muerteda.png")
+```

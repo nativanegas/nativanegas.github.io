@@ -1,6 +1,12 @@
 ---
 title: "Objetivos del proyecto"
 ---
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+library(dygraphs)
+```
+
 
 <center>
 <h3>Objetivo General</h3>
@@ -18,3 +24,7 @@ Estimar y pronosticar por medio de métodos estadísticos la curva de propagaci�
 * Realizar un análisis comparativo de los modelos de pronóstico seleccionados para escoger el que mejor se ajuste a la serie a partir de indicadores estadísticos y representarlos grafícamente.
 * Generar una estrategia de comunicación que permita a los ciudadanos visualizar la cantidad de contagiados, muertos y recuperados por COVID-19 en los departamentos de Colombia durante el año 2020.
 </div>
+
+```{r covid, fig.align="center",out.width="300px"}
+include_graphics("covid.jpg")
+```

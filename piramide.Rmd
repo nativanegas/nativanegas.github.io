@@ -1,0 +1,12 @@
+---
+title: "Contagiados por edad y sexo"
+---
+
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+```{r piramide, fig.align="center",out.width="700px"}
+include_graphics("piramide.png")
+```

@@ -1,0 +1,12 @@
+---
+title: ""
+---
+
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+```{r tipo, fig.align="center",out.width="700px"}
+include_graphics("tipo.png")
+```

@@ -1,0 +1,17 @@
+---
+title: "Departamentos"
+---
+
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(knitr)
+```
+
+```{r dpto_contagios, fig.align="center",out.width="700px"}
+include_graphics("departamentos_contagios.PNG")
+```
+
+```{r dpto_fallecidos, fig.align="center",out.width="700px"}
+include_graphics("departamentos_fallecidos.PNG")
+```
+

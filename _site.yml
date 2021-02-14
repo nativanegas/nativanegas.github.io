@@ -10,6 +10,25 @@ navbar:
     - text: "Objetivos"
       icon: fa-file
       href: about.html
+    - text: "Análisis de datos"
+      icon: fa-adn
+      menu:
+        - text: "Análisis Univariado"
+        - text: "Atención"
+          href: atencion.html
+        - text: "Tipo"
+          href: tipo.html
+        - text: "Edad"
+          href: edad.html
+        - text: "Departamentos"
+          href: departamentos.html
+        - text: "Análisis Bivariado"
+        - text: "Muertos por edad"
+          href: muertos_edad.html
+        - text: "Recuperados por edad"
+          href: recuperados_edad.html
+        - text: "Contagiados por edad y sexo"
+          href: piramide.html
     - text: "Modelos"
       icon: fa-server
       menu:
@@ -28,6 +47,7 @@ navbar:
     - text: "Dashboard"
       icon: fa-globe
       href: dashboard.html
+    
 output:
   html_document:
     theme: united
