@@ -5,15 +5,26 @@ title: "Modelo de Medias Móviles"
 knitr::opts_chunk$set(echo = FALSE)
 library(knitr)
 library(graphics)
+library(dygraphs)
+library(xts)          # To make the convertion data-frame / xts format
+library(lubridate)
+pred1=read.csv("/Users/Natalia/Desktop/TESIS/2020-2/DOCUMENTOS FINAL TESIS/predmma.csv") 
+names(pred1)=("Contagiados")
+pred1=ts(pred1)
 ```
 
-<div style="padding: 10px; float: left; width: 45%; text-align: justify;">
+<center>
 ```{r mm_grafica, fig.align="center",out.width="600px"}
-include_graphics("mm.png")
+mm <- dygraph(pred1) %>%
+  dyOptions(labelsUTC = TRUE, fillGraph=TRUE, fillAlpha=0.1, drawGrid = FALSE, colors="#D8AE5A") %>%
+  dyRangeSelector() %>%
+  dyCrosshair(direction = "vertical") %>%
+  dyHighlight(highlightCircleSize = 5, highlightSeriesBackgroundAlpha = 0.2, hideOnMouseOut = FALSE)  %>%
+  dyRoller(rollPeriod = 1)
+mm
 ```
-</div>
-<div style="padding: 10px; float: right; width: 45%; text-align: justify;">
+
 ```{r mm_pronostico, fig.align="center",out.width="300px"}
 include_graphics("pronmm.PNG")
 ```
-</div>
+</center>

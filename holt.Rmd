@@ -4,16 +4,28 @@ title: "Modelo Holt"
 ```{r setup, include=FALSE,echo=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(knitr)
+library(dygraphs)
+library(xts)          # To make the convertion data-frame / xts format
+library(lubridate)
+holt_pred=read.csv("/Users/Natalia/Desktop/TESIS/2020-2/DOCUMENTOS FINAL TESIS/modholt_es.csv") 
+names(holt_pred)=("Contagiados")
+holt_pred=ts(holt_pred)
+
 ```
 
-
-<div style="padding: 10px; float: left; width: 45%; text-align: justify;">
+<center>
 ```{r holt_grafica, fig.align="center",out.width="600px"}
-include_graphics("holt.png")
+holt_p <- dygraph(holt_pred) %>%
+  dyOptions(labelsUTC = TRUE, fillGraph=TRUE, fillAlpha=0.1, drawGrid = FALSE, colors="#D8AE5A") %>%
+  dyRangeSelector() %>%
+  dyCrosshair(direction = "vertical") %>%
+  dyHighlight(highlightCircleSize = 5, highlightSeriesBackgroundAlpha = 0.2, hideOnMouseOut = FALSE)  %>%
+  dyRoller(rollPeriod = 1)
+holt_p
+
 ```
-</div>
-<div style="padding: 10px; float: right; width: 45%; text-align: justify;">
+
 ```{r holt_pronostico, fig.align="center",out.width="300px"}
 include_graphics("pronHolt.PNG")
 ```
-</div>
+</center>
