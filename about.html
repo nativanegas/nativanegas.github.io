@@ -13,6 +13,7 @@
 
 <title>Objetivos del proyecto</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
@@ -24,6 +25,15 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -69,6 +79,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -275,21 +286,21 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fa fa-home"></span>
+    <span class="fas fa-home"></span>
      
     Presentación
   </a>
 </li>
 <li>
   <a href="about.html">
-    <span class="fa fa-file"></span>
+    <span class="fas fa-file"></span>
      
     Objetivos
   </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-adn"></span>
+    <span class="fas fa-adn"></span>
      
     Análisis de datos
      
@@ -323,7 +334,7 @@ $(document).ready(function () {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-server"></span>
+    <span class="fas fa-server"></span>
      
     Modelos
      
@@ -351,7 +362,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="dashboard.html">
-    <span class="fa fa-globe"></span>
+    <span class="fas fa-globe"></span>
      
     Dashboard
   </a>
@@ -388,7 +399,7 @@ Objetivos Específicos
 </center>
 <div style="text-align: justify">
 <ul>
-<li>Realizar una revisión de las principales metodologías para una generación de pronósticos con el fin de ser utilizados en la construcción de modelos de la serie de tiempo generada por la transmisión del virus COVID-19.</li>
+<li>Realizar una revisión de las principales metodologías para una generación de pronósticos con el fin de ser utilizados en la construcción de modelos de la serie de tiempo generada por la transmisión del virus Sars-CoV-2.</li>
 <li>Construir e identificar diferentes modelos de pronóstico con los datos obtenidos anivel nacional para analizar el comportamiento del COVID-19 en Colombia.</li>
 <li>Realizar un análisis comparativo de los modelos de pronóstico seleccionados para escoger el que mejor se ajuste a la serie a partir de indicadores estadísticos y representarlos grafícamente.</li>
 <li>Generar una estrategia de comunicación que permita a los ciudadanos visualizar la cantidad de contagiados, muertos y recuperados por COVID-19 en los departamentos de Colombia durante el año 2020.</li>
@@ -405,7 +416,7 @@ Objetivos Específicos
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
