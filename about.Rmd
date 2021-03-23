@@ -19,7 +19,7 @@ Estimar y pronosticar por medio de métodos estadísticos la curva de propagaci�
 <h3>Objetivos Específicos</h3>
 </center>
 <div style="text-align: justify">
-* Realizar una revisión de las principales metodologías para una generación de pronósticos con el fin de ser utilizados en la construcción de modelos de la serie de tiempo generada por la transmisión del virus Sars-CoV-2.
+* Realizar una revisión de las principales metodologías para una generación de pronósticos con el fin de ser utilizados en la construcción de modelos de la serie de tiempo generada por el COVID-19.
 * Construir e identificar diferentes modelos de pronóstico con los datos obtenidos anivel nacional para analizar el comportamiento del COVID-19 en Colombia.
 * Realizar un análisis comparativo de los modelos de pronóstico seleccionados para escoger el que mejor se ajuste a la serie a partir de indicadores estadísticos y representarlos grafícamente.
 * Generar una estrategia de comunicación que permita a los ciudadanos visualizar la cantidad de contagiados, muertos y recuperados por COVID-19 en los departamentos de Colombia durante el año 2020.
