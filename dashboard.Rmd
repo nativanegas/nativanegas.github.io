@@ -33,8 +33,8 @@ library(mapview)
 ```{r descarga_datos, include=FALSE,echo=FALSE}
 token <- "HufIk4NUOvHkCccqlJjKcJVqm" #Es una herramienta para poder descargar los datos desde el INS.
 df.ins <- read.socrata("https://www.datos.gov.co/resource/gt2j-8ykr.json", app_token = token)
-mapa=readOGR("/Users/Natalia/Desktop/TESIS/depto/depto.shp", stringsAsFactors=FALSE) #Exporta los datos para crear el mapa de Colombia dividido por departamentos
-dashboard=st_read("/Users/Natalia/Desktop/TESIS/depto/depto.shp",stringsAsFactors=FALSE) #Exporta las caracteristicas de cada departamento de Colombia
+mapa=readOGR("/Users/Carlos/Desktop/Ratoncita/Departamentos/depto.shp", stringsAsFactors=FALSE) #Exporta los datos para crear el mapa de Colombia dividido por departamentos
+dashboard=st_read("/Users/Carlos/Desktop/Ratoncita/Departamentos/depto.shp",stringsAsFactors=FALSE) #Exporta las caracteristicas de cada departamento de Colombia
 plot(mapa,main="COLOMBIA") #Crea el mapa de Colombia
 str(mapa) #Muestra de forma compacta la estructura interna de un objeto.
 
@@ -51,7 +51,7 @@ dashboard=arrange(dashboard, as.numeric(DPTO)) #Organiza de menor a mayor la bas
 rownames(TOTAL)=dashboard$NOMBRE_DPT
 rownames(tabla1)=dashboard$NOMBRE_DPT
 #write.csv(tabla1, file="covid19.csv") #Guarda en un archivo .csv la tabla creada.
-covid19=read.csv("/Users/Natalia/Desktop/TESIS/2020-2/DOCUMENTOS FINAL TESIS/covid19.csv") #Exporta el archivo creado anteriormente.
+covid19=read.csv("/Users/Carlos/Desktop/nativanegas.github.io-main/covid19.csv") #Exporta el archivo creado anteriormente.
 covid19=data.frame(covid19,TOTAL) #Concatena el archivo anterior con el total de contagiados.
 names(covid19)=cbind("NOMBRE_DPT","CASOS ACTIVOS","FALLECIDOS","SIN REGISTROS","RECUPERADOS","TOTAL CONTAGIADOS") #Renombra las columnas.
 dashboard=dashboard[,-1] #Elimina la primera columna de la base dashboard.
